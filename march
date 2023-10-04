@@ -1,0 +1,33 @@
+Prod -
+1. Upload Flogo Contributions - US-east-1 Production - DONE
+2. Deploy TCI+BW+FLOGO+Docs Chart in CIC2
+  US-East-1 region
+a.Use the 3.7.0, TCI, Docs recipe from here and copy the same recipe on CIC2 Provisioner  - DONE
+b.Use the 3.7.0  FLOGO recipe from here and copy the same recipe on CIC2 Provisioner      - DONE
+c.Use the 3.7.0  BW recipe from here and copy the same recipe on CIC2 Provisioner         -
+
+
+Verification
+export WHO=prod              #For US-East-1 Production
+helm ls -Aa
+kubectl get pods -A | grep tci-flogotester
+kubectl scale deployment -n <namesapce> cic-tenant-tci-flogotester --replicas=3
+
+
+CIC2
+US-East-1 region
+Use the  recipe from here and copy the same recipe on CIC2 Provisioner
+
+Upload BW Contributions
+US East Production
+
+
+kubectl patch deploy cic-tenant-bpm-cm -n cic20-prod-tibco-tcla --type=‘json’ -p=‘[{“op”: “replace”, “path”: “/spec/template/spec/containers/0/image”, “value”:“664529841144.dkr.ecr.eu-west-1.amazonaws.com/tcla/client/cm:1.0.122”}]’
+kubectl edit deploy cic-tenant-bpm-cm -n cic20-prod-tibco-tcla
+kubectl describe deploy cic-tenant-bpm -n cic20-prod-tibco-tcla | grep -i image |grep -v stratosphere
+
+
+1.
+01ED4FZ748VR107YD9JK85N02C
+01ED4AZEPC4P73VPGK30THEKE6
+01ED4AVCGEHEAS5MH16A21P0W3	

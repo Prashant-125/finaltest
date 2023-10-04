@@ -1,0 +1,11 @@
+tcam:
+            logServer:
+              cidr: 10..32.0/20
+              host: staging-es-internal.eu.aws.watcher.tibcocloud.com
+              majorVersion: '7'
+              port: '443'
+              scheme: httpks
+              services:
+                index: tcam
+                password: ${}
+                username: ${TCAM_LOG_SERVICES_USER}

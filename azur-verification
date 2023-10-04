@@ -1,0 +1,30 @@
+cat /etc/os-release
+cat /tmp/ansible/ansible.log
+cat /var/log/startup.log
+cat /var/log/setup.log    cat /var/log/setup.log | grep -i error
+cat /var/log/<machine-name>.log e.g. for Tropmgr: /var/log/trop_mgr.log cat /var/log/bastion.log | grep -i error
+lsblk
+
+
+tciservices -       Done
+10.0.0.32            y
+10.0.0.33            y
+10.0.0.34            y
+10.0.0.35            y
+10.0.0.36            y
+10.0.0.37            y
+10.0.0.38            y
+10.0.0.39            y
+10.0.0.40            y
+10.0.0.41            y
+10.0.0.42            y
+10.0.0.43            y
+10.0.0.44            y
+10.0.0.45            y
+10.0.0.46            y
+10.0.0.47            y
+10.0.0.48            y
+10.0.0.49            y      
+10.0.0.50            y
+10.0.0.51            y
+10.0.0.52

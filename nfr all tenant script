@@ -1,0 +1,211 @@
+{
+  "partnerNFR": [
+    {
+      "userDetails": {
+        "firstName": "Mike",
+        "lastName": "Kolling",
+        "email": "mike.kolling@dynamics247.net",
+        "companyName": "Manxman Consulting Ltd",
+        "phone": "07400686186",
+        "country": "GB",
+        "state": ""
+      },
+      "tenantSubscriptionDetails": [
+        {
+            "tenantId": "TCI",
+            "planId": "TIB_CLD_TCI_NFR",
+            "capabilities": {
+              "TCI": {
+                "cc": "-1",
+                "hyb": "15"
+              }
+            },
+            "seats": {
+              "TCI": {
+                "USR": -1,
+                "ADM": -1,
+                "RO": -1
+              }
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "TCE",
+            "planId": "TIB_CLD_TCE_NFR",
+            "capabilities": {
+              "TCE": {
+                "cpu": "2",
+                "icbe": "5",
+                "mem": "8"
+              }
+            },
+            "seats": {
+              "TCE": {
+                "ADM": 10,
+                "DEV": 10
+              }
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+              {
+            "tenantId": "TCTA",
+            "planId": "TIB_CLD_TCTA_NFR",
+            "capabilities": {
+              "TCTA": {
+                "mdt": "1000",
+                "mfs": "5"
+              }
+            },
+            "seats": {
+              "TCTA": {
+                "ADM": 10,
+                "USR": 10
+              }
+            },
+            "eula": true,
+                "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "TCM",
+            "planId": "TIB_CLD_TCM_NFR",
+            "capabilities": {
+              "TCM": {
+                "mcon": "1000",
+                "mmsg": "10M",
+                "mmsz": "32KB",
+                "nsn": "msgapps",
+                "pcnt": "100",
+                "psize": "500MB",
+                "pttl": "4d",
+                "slvl": "community"
+              }
+            },
+            "seats": {
+              "TCM": -1
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "SPOTFIRE",
+            "planId": "TIB_CLD_SPOTFIRE_NFR",
+            "capabilities": {
+              "SPOTFIRE": {
+                "AuditRetentionPeriod": "90",
+                "DocumentStorage": "1200"
+              }
+            },
+            "seats": {
+              "SPOTFIRE": {
+                "CLOUD_ANALYST": 4,
+                "CLOUD_BUSINESS_AUTHOR": 2,
+                "CLOUD_CONSUMER": 10
+              }
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "BPM",
+            "planId": "TIB_CLD_LA_NFR",
+            "capabilities": {
+              "BPM": {
+                "AuditRetentionPeriod": "365",
+                "BPMApplications": "3",
+                "BPMDevelopers": "10",
+                "BPMProcessStarts": "0",
+                "Cases": "0",
+                "DocumentStorage": "0",
+                "EmailCount": "1000",
+                "Feature-AuditSafe": "1",
+                "Feature-TCIOutbound": "1",
+                "ProductionSandboxes": "1",
+                "Trial": "0"
+              }
+            },
+            "seats": {
+              "BPM": {
+                "Administrator": 10,
+                "AllUsers": 30,
+                "ApplicationDeveloper": 10
+              }
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "TCDS",
+            "planId": "TIB_CLD_TCDS_NFR",
+            "capabilities": {
+              "TCDS": {
+                "bw": -1,
+                "cnt": 10,
+                "dls": 1,
+                "sls": 0,
+                "sto": 1
+              }
+            },
+            "seats": {
+              "TCDS": {
+                "ADM": 10,
+                "OPR": 10,
+                "USR": 10,
+                "CNS": 10
+              }
+            },
+            "eula": true,
+            "comment": "SRESD-23314",
+            "expiryDate": "12/31/2023",
+            "region": "eu-west-1"
+          },
+          {
+            "tenantId": "TCMD",
+            "planId": "TIB_CLD_TCMD_NFR",
+            "capabilities": {
+              "TCMD": {
+                "type": "trial"
+              }
+            },
+            "seats": {
+              "TCMD": {
+                "ADM": 1,
+                "RW": 5,
+                "USR": 20
+              }
+            }
+      ],
+      "skipEmail": false,
+      "skipDripCampaign": false,
+      "tscAccountId": "01ED4FZ748VR107YD9JK85N02C",
+      "accountSettings": {
+        "childLimit": 0,
+        "siblingLimit": 10,
+        "ownerLimit": 10,
+        "serviceAccountLimit": 5,
+        "accountType": "PARTNER_NFR",
+        "syncSubscription": false,
+        "syncUser": false,
+        "inheritUsers": false,
+        "inheritSubscriptions": false,
+        "testOrg": false,
+        "sandboxOrg": false
+      },
+      "accountId": "229130",
+      "subscriptionId": "1187095"
+    }
+  ]
+}

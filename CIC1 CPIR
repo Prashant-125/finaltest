@@ -1,0 +1,28 @@
+Steps 1 - create 2-47-0-CPIR foler in ~/efs/us-west-2/Tropos/
+step 2  - export AWS_DEFAULT_REGION=region
+step - 3 create backup.sh -> chmod 700 backup.sh -> then run ./backup.sh
+step - 4 create sync-and-pull.sh -> chmod 700 sync-and-pull.sh -> then run ./sync-and-pull.sh
+ 
+
+   then go to respective tropmgr      
+   create verify.sh - chmod 700 verify.sh - ./verify.sh
+
+  cd ~/efs/us-west-2/Tropos/2-47-0-CPIR/troposbase.new
+step 5 - https://confluence.tibco.com/display/TROP/Lower+Environment+2-45-0+CIC1+-+AWS+Upgrade 
+         Configure - 1 ./tropos-actions.sh configure  2. ./tropos-actions.sh push-scripts 
+
+ step 6         ./tropos-actions.sh upgrade-router-files 273
+                 ./tropos-actions.sh check-router-upgrade-status
+                ./tropos-actions.sh upgrade-router-proxy 273
+                ./tropos-actions.sh check-router-upgrade-status
+                
+
+
+
+
+
+
+
+
+
+        
